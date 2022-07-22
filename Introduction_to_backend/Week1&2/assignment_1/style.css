@@ -1,0 +1,59 @@
+h1 {
+    color: red;
+}
+
+div h1 {
+
+    /*CENTER TEXT CONTENT IN BOX MODEL*/
+    text-align: center;
+    border: 1px solid royalblue;
+}
+
+div.part1 {
+    border-style: solid;
+    border-color: coral;
+}
+
+div {
+    margin-top: 5px;
+}
+
+#blog>p {
+    border-style: solid;
+    border-color: purple;
+}
+
+p {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+}
+
+/* HTML ELEMENT CENTER ALIGNMENT*/
+.parent {
+    border: 4px solid red;
+}
+
+.child {
+    width: 50%;
+    padding: 20px;
+    border: 4px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+/*For inline elements we need to convert to Block elements first*/
+
+
+
+/* LEFT AND RIGHT ALIGNMENTS */
+.parent2 {
+    border: 4px solid red;
+}
+.child2 {
+    border: 4px solid rgb(27, 18, 18);
+    padding: 10px;
+    float: right;
+}
