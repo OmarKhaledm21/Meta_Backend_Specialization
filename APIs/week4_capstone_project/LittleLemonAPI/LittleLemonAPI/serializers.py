@@ -7,6 +7,7 @@ class MenuItemModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = MenuItem
         fields = ['id', 'title', 'price', 'featured', 'category']
+        depth = 1
 
 
 class MenuItemSerializer(serializers.Serializer):
@@ -46,9 +47,9 @@ class OrderSerializer(serializers.ModelSerializer):
 
 
 class OrderItemSerializer(serializers.ModelSerializer):
-    menuitem = MenuItemModelSerializer(read_only=True)
     menuitem_id = serializers.IntegerField(write_only=True)
 
     class Meta:
         model = OrderItem
         fields = ['menuitem', 'menuitem_id', 'quantity', 'unit_price', 'price']
+        depth =2
